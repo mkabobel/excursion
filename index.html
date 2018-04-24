@@ -1,36 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <title>Excursion Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="reset" href="resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Source+Sans+Pro:400,400i|Source+Serif+Pro:400,600,700" rel="stylesheet">
+    <title>Colmar Academy</title>
   </head>
   <body>
 
-    <!-- Heading Section -->
+<!-- Header Scetion -->
+<header>
+  <div class="desktop-nav">
+    <a href="#" class="logo">
+      <img src="resources/images/ic-logo.svg" alt="icon">
+      <span class="colmar">Colmar</span>
+      <span class="academy">Academy</span>
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">On Campus</a>
+        </li>
+        <li>
+          <a href="#">Online</a>
+        </li>
+        <li>
+          <a href="#">For Companies</a>
+        </li>
+        <li>
+          <a href="#">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#">
+      <img src="resources/images/ic-logo.svg" alt="icon">
+    </a>
+    <a href="#">
+      <img src="resources/images/ic-on-campus.svg" alt="on campus">
+    </a>
+    <a href="#">
+      <img src="resources/images/ic-online.svg" alt="online">
+    </a>
+    <a href="#">
+      <img src="resources/images/ic-login.svg" alt="login">
+    </a>
+  </nav>
+</header>
 
-    <h1>Discover hidden places in the world around you</h1>
-    <p> <a class="cta" href="#">Download Excursion (coming soon!)</a></p>
-    <video autoplay muted loop>
-      <source src="./resources/videos/excursion.mp4" type="video/mp4">
-    </video>
+<!-- Main Section -->
+<div class="main-container">
+  <main>
+    <section class="banner">
+      <div class="banner-image">
+        <img src="resources/images/banner.jpg" alt="table-reading">
+      </div>
+      <div class="banner-content">
+        <h1>Learn something new every day</h1>
+        <p>A journey of a thousand miles begins with one step.</p>
+        <button>Start here</button>
+      </div>
+    </section>
+    <section class="article">
+      <div class="article-callout">
+        <img src="resources/images/information-main.jpg" alt="reading-man">
+        <h1>It doesn't hurt to keep practicing</h1>
+        <p>"Take advantage of every opportunity to practice your communication skills so that when important occasions arise, you will have the gift, the style, the sharpness, the clarity, and the emotions to affect other people."</p>
+        <h3>Emanuel, Sr. Strategist at Hiring.com</h3>
+      </div>
+      <div class="article-list">
+        <div class="article-item">
+          <div class="article-image-desktop">
+            <img src="resources/images/information-orientation.jpg" alt="people-walking">
+          </div>
+          <div class="article-image-mobile">
+            <img src="resources/images/information-orientation-mobile.jpg" alt="people-walking-mobile">
+          </div>
+          <div class="article-text">
+            <h2>Orientation Date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8AM - 3PM</p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-image-desktop">
+            <img src="resources/images/information-campus.jpg" alt="wall-map">
+          </div>
+          <div class="article-image-mobile">
+            <img src="resources/images/information-campus-mobile.jpg" alt="wall-map-mobile">
+          </div>
+          <div class="article-text">
+            <h2>Our Campus</h2>
+            <p>Find which campus is close by you</p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-image-desktop">
+            <img src="resources/images/information-guest-lecture.jpg" alt="glasses-man">
+          </div>
+          <div class="article-image-mobile">
+            <img src="resources/images/information-guest-lecture-mobile.jpg" alt="glasses-man-mobile">
+          </div>
+          <div class="article-text">
+            <h2>Guest Lecture</h2>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="courses">
+      <h1>Start Learning</h1>
+      <div class="course-list">
+        <div class="course">
+          <div class="course-image" id="software-engingeering">
+            <h2>Software Engineering</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="computer-art">
+            <h2>Computer Art</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="design">
+            <h2>Design</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="data">
+            <h2>Data</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="business">
+            <h2>Business</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="marketing">
+            <h2>Marketing</h2>
+          </div>
+          <div class="course-text">
+            <p class="course-label">Courses</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="thesis-exhibits">
+      <h1>Thesis Exhibits</h1>
+      <div class="thesis-info">
+        <div class="thesis-callout">
+          <video src="resources/videos/thesis.mp4" controls="">Sorry, your browser doesn't support embedded videos</video>
+          <h2> Reimagine Urban</h2>
+          <p>"Cities have always offered anonymity, variety, and conjunction, qualities best baked in by walking: one does not have to go into the bakery or the fortune-teller's, only to know that one might. A city always contains more than any inhabitant can know, and a great city always makes the unknown and the possible spurs to the imagination."</p>
+        </div>
+        <div class="thesis-list">
+          <div class="thesis-item">
+            <div class="thesis-image">
+              <img src="resources/images/thesis-fisma.jpg" alt="overhead-notes">
+            </div>
+            <div class="thesis-image-text">
+              <h2>Fisma: Design and Prototype</h2>
+              <p class="body-text">Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="thesis-item">
+            <div class="thesis-image">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="empire-building">
+            </div>
+            <div class="thesis-image-text">
+              <h2>Now and Then</h2>
+              <p class="body-text">Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
 
-    <!-- Travel Section -->
-
-    <h2>Your personal travel guide</h2>
-    <p>Excursion remembers places you like, and recommends new points of interest around you.</p><p><img class="tent" src="./resources/images/camp.jpg"></p>
-
-    <!-- Coming Soon Section -->
-
-    <p><img class="phone" src="./resources/images/phone.png"></p>
-    <h2>Coming Soon for iPhone and Android</h2>
-    <p> <a class="cta" href="#">Download Excursion (coming soon!)</a></p>
-
-    <!-- Footer Section -->
-
-    <div class="footer">
-      <p>© Excursion</p>
-    </div>
-
+<!-- Footer Section -->
+<footer>
+  <div>
+    © Colmar Academy. All rights reserved.
+  </div>
+  <div class="footer-links">
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+  </div>
+</footer>
   </body>
 </html>
